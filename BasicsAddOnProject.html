@@ -21,6 +21,11 @@
             max-width: 100%;
         }
 
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
         button {
             display: block;
             margin: 0 auto; 
@@ -62,6 +67,32 @@
             color: black; 
             background: white;
         }
+
+        .chicken-intro-picture {
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+        .chicken-intro-picture:hover {
+            filter: contrast(80%);
+            transform: scale(1.1);  
+        }
+
+        .grid {
+            margin: 15px 0; 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr; 
+            grid-gap: 20px; 
+        }
+
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+            transition: all 150ms ease-in-out;
+        }
+
+        .grid img:hover {
+            transform: scale(2);
+        }
     </style>
 </head>
 <body>
@@ -74,8 +105,10 @@
     <img
     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/660/original/192203391_10159200660506578_815559551687091414_n.jpg?1719506246"
     alt=""
+    class="chicken-intro-picture"
     />
     </a>
+    <div class="grid">
     <img
     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/661/original/P1-AW126_Chicke_G_20100707180953.jpg?1719506423"
     alt=""
@@ -92,9 +125,15 @@
     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/665/original/chickensmainillo_CMYK.jpg?1719506961"
     alt=""
     />
+    </div>
     <p>Chickens can be good pets if they are properly cared for, and they can be fun and rewarding to keep. They can be good companions for children, who can learn about pet ownership responsibilities, and all family members can participate in their care. Chickens are also known for being inquisitive and explorative, and they can recognize their owners by sight and sound.</p>
+    <br /><br />
+    <a href="https://www.petmd.com/bird/care/what-you-should-know-getting-backyard-chickens">
+        <strong> Read Here </strong>
+    </a>
+    </p>
 
-    <button>Learn More Here</button>
+    <button>Learn More</button>
     </div>
     <footer>Coded by <a href="https://shecodes.io/" target="_blank">Sandeep D.</a>
     </footer>
