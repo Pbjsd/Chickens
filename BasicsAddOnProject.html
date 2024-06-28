@@ -6,7 +6,7 @@
     <title>Raising Chickens!</title>
     <style>
         body {
-            background: palegoldenrod;
+            background: linear-gradient(122deg, rgb(237, 191, 47) 0%, rgb(139, 102, 241) 100%);
         }
 
         h1 {
@@ -93,6 +93,23 @@
         .grid img:hover {
             transform: scale(2);
         }
+
+      .dark {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        color: white;
+        }
+
+        .dark .container {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .dark a {
+            color: plum; 
+        }
     </style>
 </head>
 <body>
@@ -132,10 +149,25 @@
         <strong> Read Here </strong>
     </a>
     </p>
-
-    <button>Learn More</button>
     </div>
     <footer>Coded by <a href="https://shecodes.io/" target="_blank">Sandeep D.</a>
     </footer>
+
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body"); 
+
+            if (body.classList.contains("dark")) {
+                body.classList.remove("dark"); 
+            } else {
+                body.classList.add("dark"); 
+            }
+            // This is also another way to change the theme like we did above: 
+            // body.classList.toggle("dark"); 
+        }
+        
+        let themeButton = document.querySelector(".theme-button"); 
+        themeButton.addEventListener("click", changeTheme); 
+    </script>
 </body>
 </html>
